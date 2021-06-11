@@ -242,7 +242,7 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
-  /*Your Code Here*/
+  
 }
 
 
@@ -301,20 +301,24 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-// function lotsOfArt(array){
-//    let paintingArray = [...array]; 
-//    let i = 0
-//   for (i = 0; array.length; i++){
-//     if (array['paintings'] < 100) {
-//    paintingArray.unshift(array.name[i])
-//     }
-//   }
-//   return paintingArray
+
+function lotsOfArt(array){
   
-// }
-console.log('test', lotsOfArt(artists))
+    let newArray = [];
+    for(let i = 0; i < array.length; i++){
+      if(array[i]['paintings'] > 100){
+        // if(places[0]['region'] === 'Middle East'){
+        // newArray.push(places[0]['city']);
+      //}
+        newArray.push(array[i]['name']);
+      }
+    }
+    return newArray;
+  }
+ 
 
 
+console.log(lotsOfArt(artist)); 
 
 
 // 🎨🎨 STRETCH 🎨🎨//
