@@ -61,6 +61,7 @@ img {
 }	
 img:hover {	
     opacity: 80%;	
+
 }	
 
 /*HEADER STYLES */
@@ -151,10 +152,14 @@ button:hover{
    }
    /*artist-container*/
    .artists-container {
-       display: flex; 
-       
+       flex-direction: column;
+       align-items: center;
+       width: 80%; 
    }
-
+   .artist {
+       width: 100%; 
+   }
+   
 }
 
 
@@ -163,6 +168,6 @@ button:hover{
 
 /* design tools */
 
-* {
+/* * {
     border: 1px solid grey;
-}
+} */
