@@ -243,6 +243,16 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
   
+    let newArray = [];
+    // for(let i = 0; i < array.length; i++){
+    //   if(array[i]['year']   parseInt(array.year)){
+    //     
+    //   //}
+    //     newArray.push(array[i][key2]);
+    //   }
+    // }
+    return newArray;
+  
 }
 
 
@@ -307,9 +317,7 @@ function lotsOfArt(array){
     let newArray = [];
     for(let i = 0; i < array.length; i++){
       if(array[i]['paintings'] > 100){
-        // if(places[0]['region'] === 'Middle East'){
-        // newArray.push(places[0]['city']);
-      //}
+        
         newArray.push(array[i]['name']);
       }
     }
